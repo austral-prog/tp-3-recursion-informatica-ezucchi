@@ -92,7 +92,7 @@ public class RecursiveFunctions {
     }
 
     public static boolean recursivePalindrome(String word) {
-        if (word.length() != 1) {
+        if (word.length() != 1 && word.length() != 0) {
             if (word.charAt(0) == word.charAt(word.length() - 1)) {
                 return  recursivePalindrome(word.substring(1, word.length() - 1));
             }
